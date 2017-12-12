@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+$("li:not (:first, :last,eq(2))").css("background #9cf"); //mettre en bakground tout sauf le premier , le dernier et le 3 eme elements(eq(2)=3eme elements)
+})
+</script>
+<style>
+li{
+	width : 150px;
+	padding-left:3px;
+}
+.trois , .un{
+	border:2px solid red;
+}
+
+</style>
+
+</head>
+<body>
+<ul>
+<li class="un">Item 1</li>
+<li class="deux">Item 2</li>
+<li class="trois">Item 3</li>
+<li class="quatre">Item 4</li>
+<li class="cinq">Item 5</li>
+
+</ul>
+
+</body>
+</html>

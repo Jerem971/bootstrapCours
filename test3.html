@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+$("li.deux ~li").css("border","4px double red");
+})
+</script>
+<style>
+li{
+	width : 150px;
+	padding-left:3px;
+}
+.trois , .un{
+	border:2px solid red;
+}
+
+</style>
+
+</head>
+<body>
+<ul>
+<li class="un">Item 1</li>
+<li class="deux">Item 2</li>
+<li class="trois">Item 3</li>
+<li class="quatre">Item 4</li>
+<li class="cinq">Item 5</li>
+
+</ul>
+
+</body>
+</html>

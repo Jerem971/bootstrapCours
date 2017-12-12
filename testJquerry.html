@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+/*$("#un").css("border","1px solid red");
+$("p").click(function(){
+        $(this).hide();
+    });
+})*/
+//$("#un","#deux","#trois");
+$("#box > div > p").css("border","4px double red");
+})
+</script>
+<style>
+span#box{display:block;}
+div{
+	width:  80px;
+	height: 100px;
+	margin: 5px;
+	float:left;
+	background: #9cf; 
+	}
+p{text-align: center;}
+</style>
+
+</head>
+<body>
+
+<span id="box">
+<div></div>
+<div><p>X <img src="images.png" alt="" width="60"> X</p></div>
+<div><p>Par <br> <span> a</span> <br> graphe</p></div>
+</span>
+</body>
+</html>
+
+
+

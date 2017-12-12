@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  #message { display: none; background-color: yellow; }
+</style>
+
+<span id="message">Ce texte sera affiché pendant deux secondes</span><br /><br />
+<button id="afficheMessage">Afficher le message</button>
+
+<script src="jquery.js"></script>
+<script>
+ $(function() {
+   $('#afficheMessage').click(function() {
+     $('#message').fadeIn('slow').delay(2000).fadeOut('slow');
+   });
+ });
+</script>
+</head>
+<body>
+
+</body>
+</html>
